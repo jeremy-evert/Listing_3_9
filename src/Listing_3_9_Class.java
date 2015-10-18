@@ -12,22 +12,25 @@ public class Listing_3_9_Class {
 		System.out.print("Enter the day of the month you were born: ");
 		int day = input.nextInt();
 		
-		System.out.print("\nYou were born in the year of the ");
+		
+		String chineseZodiacYear = null;
 		
 		switch (year % 12){
-		case 0: System.out.println("monkey."); break;
-		case 1: System.out.println("rooster."); break;
-		case 2: System.out.println("dog."); break;
-		case 3: System.out.println("pig."); break;
-		case 4: System.out.println("rat."); break;
-		case 5: System.out.println("ox."); break;
-		case 6: System.out.println("tiger."); break;
-		case 7: System.out.println("rabbit."); break;
-		case 8: System.out.println("dragon."); break;
-		case 9: System.out.println("snake."); break;
-		case 10: System.out.println("horse."); break;
-		case 11: System.out.println("sheep."); 
+		case 0:  chineseZodiacYear = "monkey."; 	break; 
+		case 1:  chineseZodiacYear = "rooster."; 	break;
+		case 2:  chineseZodiacYear = "dog."; 		break;
+		case 3:  chineseZodiacYear = "pig."; 		break;
+		case 4:  chineseZodiacYear = "rat."; 		break;
+		case 5:  chineseZodiacYear = "ox."; 		break;
+		case 6:  chineseZodiacYear = "tiger."; 		break;
+		case 7:  chineseZodiacYear = "rabbit."; 	break;
+		case 8:  chineseZodiacYear = "dragon."; 	break;
+		case 9:  chineseZodiacYear = "snake."; 		break;
+		case 10: chineseZodiacYear = "horse."; 		break;
+		case 11: chineseZodiacYear = "sheep."; 
 		}
+		
+		System.out.println("\nYou were born in the year of the " + chineseZodiacYear);
 		
 		System.out.print("You are a ");
 		
